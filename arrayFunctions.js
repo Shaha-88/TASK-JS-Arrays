@@ -8,10 +8,11 @@
  * isArrayLengthOdd([1, 2, 3]) -> true
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
-function isArrayLengthOdd(numbers) {
-  // Your code here
+function isArrayLengthOdd(numbers) {if (numbers.length%2==0);
+  {return false;}
+ else{return true};
 }
-
+console.log(isArrayLengthOdd([1, 2, 3]))
 /**
  * isArrayLengthEven(numbers):
  * - receives array `numbers`
@@ -22,9 +23,11 @@ function isArrayLengthOdd(numbers) {
  * isArrayLengthEven([1, 2, 3]) -> false
  * isArrayLengthEven([1, 2, 3, 4]) -> true
  */
-function isArrayLengthEven(numbers) {
-  // Your code here
+function isArrayLengthEven(numbers) {if (numbers.length%2==0);
+  {return true;}
+ else{return false};
 }
+console.log(isArrayLengthOdd([1, 2, 3]))
 
 /**
  * addLailaToArray(instructors):
@@ -34,10 +37,11 @@ function isArrayLengthEven(numbers) {
  * e.g.
  * addLailaToArray(["Mshary", "Hasan"]) -> ["Mshary", "Hasan", "Laila"]
  */
-function addLailaToArray(instructors) {
-  // Your code here
+function addLailaToArray(instructors) {;
+ instructors.push("Laila");
+ return instructors;
 }
-
+addLailaToArray(["Mshary", "Hasan"])
 /**
  * eliminateTeam(teams):
  * - receives array `teams`
@@ -47,9 +51,9 @@ function addLailaToArray(instructors) {
  * eliminateTeam(["Brazil", "Germany", "Italy"]) -> "Italy"
  */
 function eliminateTeam(teams) {
-  // Your code here
+return teams.pop()
 }
-
+eliminateTeam(["Brazil", "Germany", "Italy"]) 
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
  * - receives array `fruits`
@@ -61,7 +65,9 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
-  // Your code here
+ if (fruits.length% 2 == 0){return fruits.slice(fruits/2)
+
+ }else{return{}}
 }
 
 /**
@@ -78,6 +84,9 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use number method .indexOf()
  * - Use string method .slice()
  */
-function youGottaCalmDown(shout) {
-  // Your code here
+function youGottaCalmDown(shout) {;
+  const index = shout.indexOf("!");
+  return shout.slice(0,index+1);
+ 
+  
 }
